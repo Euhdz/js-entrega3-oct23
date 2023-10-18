@@ -1,0 +1,426 @@
+/* 
+
+
+====== Main.scss  ==================================================
+@import 
+
+
+
+
+======== _base.scss =================================================
+*{
+    margin: 0
+    padding: 0
+    font-family: arial, sans-serif;  ========(checar si puedo copiar las fonts de bootstrap)
+
+}
+
+                ====Variables para colores en la página: 
+
+$color-1brand: azul plomo  #52658C rgb(82, 101, 140)
+$color-2brand: naranja #F58634 rgb(245, 134, 52)
+$color-title: navy rgb(0, 0, 128)
+$color-text: black rgb(0, 0, 0)  
+
+body {
+        
+    background-color: white;
+   
+
+    h1 {                       ====convertir los h2 en h1=====
+        color: $color-title;
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .titulopags {     ===checar si pongo esta clase a todos los h1====
+    color: navy;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    h2 {
+        color: $color-1brand;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: .25rem;
+
+    }
+
+
+    h3 {
+        color: $color-text;
+        font-size: 1rem;
+        padding: .25rem;
+
+        .desctitulo {
+            text-align: center
+        }
+    }
+
+ul {
+    list-style: none
+}
+
+
+}
+
+
+
+
+======= Index-Nosotros ==================================================
+
+h1.titulo-brand {
+        font-size: 3rem;
+
+        span {
+        font-size:.75em;
+        color: $color2brand
+        }
+}
+    
+Checar si se quedan las clases display en la página Nosotros
+
+.display-3 {
+    font-weight: 600;
+}
+
+
+
+.foto-1 {
+    height: 600, 300;
+}
+
+
+
+    
+======= Servicios ==================================================
+
+
+
+
+
+======= Paquetes ==================================================
+
+
+.parrafo-paquetes {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: start;
+}
+
+
+======= Como-funcionamos ===========================================
+
+.pasos {
+    padding: 10px;
+    max-width: 330px;
+}
+
+.pasos-icon {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.pasos-icon i {
+    color: #f58634;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+.pasos-texto {
+    text-align: center;
+    min-height: 95px;
+}
+
+.pasos-texto h3 {
+    color: #52658c
+}
+
+
+======= Contacto ==================================================
+
+div.row.m-2 {
+    border: #52658c;
+    border-radius: 3%;
+    background-color: #f8f9fa
+}
+
+div.col-lg-6.dflex {
+    padding-left: 6px;
+    padding-right: 3px;
+}
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #52658c;
+    --bs-btn-border-color: #52658c;
+    --bs-btn-hover-color: #f58634;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #f58634;
+}
+
+
+
+
+
+======= Components ==================================================
+
+Header  ==================================================
+
+header {
+mb-5 (checar qué como se pone)
+    container {
+        --bs-gutter-x: 1.5rem; (checar grabacion afterclass, min 55 aprox
+    }
+
+
+Nav-bar  ==================================================
+
+
+.nav-link {
+    font-size: large;
+    font-weight: 600;
+    color: #52658c;
+}
+
+
+
+.navbar-toggler {
+    border: 0
+}
+
+
+nav {
+    ul {
+        li {
+
+
+
+Footer ==================================================
+
+.link-legales {
+    text-decoration: none;
+    padding-x: 2px;
+    border-right: #52658c;
+    color: #52658c;
+}
+
+.link-legales:hover {
+    color: #f58634;
+}
+
+
+.texto-footer {
+    font-size: 18px;
+}
+
+Cards  ==================================================
+
+
+
+
+Buttons ==================================================
+
+.btn-plomo {
+    background-color: #52658c;
+    border: 2px solid #52658c;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-plomo:hover {
+    background-color: white;
+    border: 4px solid #f58634;
+    color: #f58634;
+    font-weight: 600;
+}
+
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #52658c;
+    --bs-btn-border-color: #52658c;
+    --bs-btn-hover-color: #f58634;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #f58634;
+}
+
+
+*/
+
+
+
+
+body {
+    background-color: white
+    }
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: navy;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.foto-1 {
+    height: 600, 300;
+}
+
+h2 {
+    color: navy;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parrafo-paquetes {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: start;
+}
+
+.nav-link {
+    font-size: large;
+    font-weight: 600;
+    color: #52658c;
+}
+
+.bus-catering-naranja {
+    color: #f58634;
+    font-size: 0.75em;
+}
+
+.btn-plomo {
+    background-color: #52658c;
+    border: 2px solid #52658c;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-plomo:hover {
+    background-color: white;
+    border: 4px solid #f58634;
+    color: #f58634;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none
+}
+
+.link-legales {
+    text-decoration: none;
+    padding-x: 2px;
+    border-right: #52658c;
+    color: #52658c;
+}
+
+.link-legales:hover {
+    color: #f58634;
+}
+
+.navbar-toggler {
+    border: 0
+}
+
+.texto-footer {
+    font-size: 18px;
+}
+
+.titulopags {
+    color: navy;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.display-3 {
+    font-weight: 600;
+}
+
+.paquete__titulo {
+    height: 50px;
+    align-items: center;
+}
+
+.paquete__descripcion {
+    height: 50px;
+    align-items: center;
+}
+
+div.row.paquete__titulo {
+    height: 100px;
+    text-align: center;
+}
+
+div.row.paquete__descripcion {
+    height: 70px;
+    text-align: center;
+    justify-content: start;
+}
+
+div.row.m-2 {
+    border: #52658c;
+    border-radius: 3%;
+    background-color: #f8f9fa
+}
+
+div.col-lg-6.dflex {
+    padding-left: 6px;
+    padding-right: 3px;
+}
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #52658c;
+    --bs-btn-border-color: #52658c;
+    --bs-btn-hover-color: #f58634;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #f58634;
+}
+
+/* ---COMO FUNCIONAMOS - PASOS A SEGUIR ---*/
+
+.pasos {
+    padding: 10px;
+    max-width: 330px;
+}
+
+.pasos-icon {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.pasos-icon i {
+    color: #f58634;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+.pasos-texto {
+    text-align: center;
+    min-height: 95px;
+}
+
+.pasos-texto h3 {
+    color: #52658c
+}
+
+/*# sourceMappingURL=styles.css.map */
