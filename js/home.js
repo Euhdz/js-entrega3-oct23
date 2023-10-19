@@ -1,7 +1,7 @@
 const pintarPaquetes = (data) => {
   const contenedor = document.getElementById("paquete-contenedor");
 
-  //Pendiente cambiar las imágenes y el alt=
+  //Pendiente Checar por qué no agarra las fotos y cambiar las imágenes y checar si aquí sería necesario cambiar el 'alt=' e incluirlo en el array de Paquetes
 
   data.forEach((paquete) => {
     const div = document.createElement("div");
@@ -15,7 +15,7 @@ const pintarPaquetes = (data) => {
       <img
         data-aos="flip-down"
         class="card-paquetes__imagen"
-        src="../img/paquete-coffee-alimentos-f7.jpg"
+        src="${paquete.foto}" 
         alt="Montaje de comida y cafe"
       />
     </div>
@@ -27,7 +27,7 @@ const pintarPaquetes = (data) => {
       </ul>
     </div>
     <div class="row mx-auto mb-3 px-5 pt-3">
-      <button class="btn btn-seleccionar seleccionar1" type="submit">
+      <button class="btn btn-seleccionar seleccionar1" id="selecc-paquete" type="submit">
         Seleccionar
       </button>
     </div>

@@ -14,7 +14,7 @@ body h1 {
   text-align: center;
 }
 body h2 {
-  color: #52658c;
+  color: #52658C;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
@@ -50,7 +50,7 @@ header {
 .nav-link {
   font-size: large;
   font-weight: 600;
-  color: #52658c;
+  color: #52658C;
 }
 
 .navbar-toggler {
@@ -58,7 +58,7 @@ header {
 }
 
 .card-servicios {
-  border: medium solid #f58634;
+  border: medium solid #F58634;
   border-radius: 5%;
   box-shadow: 7px 7px 3px 1px rgba(245, 134, 52, 0.7);
   background-color: rgb(248, 249, 250);
@@ -89,7 +89,7 @@ header {
 }
 
 .card-paquetes {
-  border: thin solid #52658c;
+  border: thin solid #52658C;
   border-radius: 0%;
   box-shadow: 7px 7px 3px 1px rgba(82, 101, 140, 0.7);
   background-color: rgb(248, 249, 250);
@@ -123,7 +123,7 @@ div.row.card-paquetes__descripcion {
   color: #52658c;
 }
 .link-legales:hover {
-  color: #f58634;
+  color: #F58634;
 }
 
 .texto-footer {
@@ -131,15 +131,15 @@ div.row.card-paquetes__descripcion {
 }
 
 .btn-plomo {
-  background-color: #52658c;
-  border: 2px solid #52658c;
+  background-color: #52658C;
+  border: 2px solid #52658C;
   color: white;
   font-weight: 600;
 }
 .btn-plomo:hover {
   background-color: white;
-  border: 4px solid #f58634;
-  color: #f58634;
+  border: 4px solid #F58634;
+  color: #F58634;
   font-weight: 600;
 }
 
@@ -153,8 +153,8 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
 }
 
 .btn-seleccionar {
-  background-color: #52658c;
-  border: 2px solid #52658c;
+  background-color: #52658C;
+  border: 2px solid #52658C;
   border-radius: 10rem;
   height: 2.5em;
   width: 9em;
@@ -163,8 +163,8 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
 }
 .btn-seleccionar:hover {
   background-color: white;
-  border: 4px solid #f58634;
-  color: #f58634;
+  border: 4px solid #F58634;
+  color: #F58634;
   font-weight: 600;
   cursor: pointer;
 }
@@ -226,7 +226,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
 
 .bus-catering-naranja {
   font-size: 0.75em;
-  color: #f58634;
+  color: #F58634;
 }
 
 .texto-nosotros {
@@ -273,7 +273,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   padding-bottom: 1%;
   text-align: center;
   justify-items: center;
-  background-color: #52658c;
+  background-color: #52658C;
   opacity: 0.8;
 }
 .titulo-serviciosdetallados h2 {
@@ -283,7 +283,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
 }
 
 .card-serviciosdetallados {
-  border: thin solid #52658c;
+  border: thin solid #52658C;
   border-radius: 0%;
   box-shadow: 7px 7px 3px 1px rgba(82, 101, 140, 0.7);
   background-color: rgb(248, 249, 250);
@@ -310,7 +310,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   min-height: 5.5rem;
 }
 .card-serviciosdetallados__title h3 {
-  color: #52658c;
+  color: #52658C;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -348,7 +348,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   padding-bottom: 1%;
   text-align: center;
   justify-items: center;
-  background-color: #52658c;
+  background-color: #52658C;
   opacity: 0.8;
   max-width: 80%;
 }
@@ -362,6 +362,115 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   font-size: 1.5rem;
 }
 
+.card {
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+select {
+  display: inline;
+  text-align: center;
+  border: 1px solid lightskyblue;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-cotizador {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-cotizador {
+  margin-top: 0;
+}
+
+.modal-cotizador h3 {
+  color: rgb(225, 76, 65);
+  padding-bottom: 5px;
+}
+
+.modal-cotizador #btn-cerrar-cotizador {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(225, 76, 65) !important;
+  border: none;
+  background-color: white;
+}
+
+.modal-cotizador #btn-cerrar-cotizador:hover {
+  cursor: pointer;
+}
+
+.modal-cotizador #btn-cerrar-cotizador:focus {
+  outline: none;
+}
+
+.modal-cotizador .paquete-precio {
+  padding-top: 10px;
+}
+
+.card .card-image .card-title {
+  color: rgb(225, 76, 65);
+  position: unset;
+}
+
+.paqueteEnCotizador {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paqueteEnCotizador:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: #ff6961;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
 .pasos {
   max-width: 330px;
 }
@@ -373,7 +482,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   padding-bottom: 3px;
 }
 .pasos-icon i {
-  color: #f58634;
+  color: #F58634;
   font-size: 2.5rem;
   padding: 5px;
 }
@@ -382,7 +491,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   min-height: 95px;
 }
 .pasos-texto h3 {
-  color: #52658c;
+  color: #52658C;
 }
 
 .caja-clientes-satisfechos {
@@ -401,7 +510,7 @@ input.btn.btn-secondary.btn-lg.btn-enviar {
   padding-bottom: 1%;
   text-align: center;
   justify-items: center;
-  background-color: #52658c;
+  background-color: #52658C;
   opacity: 0.8;
   max-width: 80%;
 }
@@ -428,15 +537,15 @@ div.col-lg-6.dflex {
 }
 
 input.btn.btn-secondary.btn-lg.btn-enviar {
-  background-color: #52658c;
-  border: 2px solid #52658c;
+  background-color: #52658C;
+  border: 2px solid #52658C;
   color: white;
   font-weight: 300;
 }
 input.btn.btn-secondary.btn-lg.btn-enviar:hover {
   background-color: white;
-  border: 2px solid #f58634;
-  color: #f58634;
+  border: 2px solid #F58634;
+  color: #F58634;
   font-weight: 300;
 }
 

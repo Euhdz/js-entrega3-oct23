@@ -1,2 +1,2 @@
 document.addEventListener("DOMContentLoaded", pintarPaquetes(paquetes));
-document.addEventListener("DOMContentLoaded", cargarCotizacion());
+//document.addEventListener("DOMContentLoaded", cargarCotizacion());
