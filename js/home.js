@@ -27,7 +27,7 @@ const pintarPaquetes = (data) => {
       </ul>
     </div>
     <div class="row mx-auto mb-3 px-5 pt-3">
-      <button class="btn btn-seleccionar seleccionar1" id="selecc-paquete" type="submit">
+      <button class="btn btn-seleccionar seleccionarPaq" id=${paquete.id} type="submit">
         Seleccionar
       </button>
     </div>

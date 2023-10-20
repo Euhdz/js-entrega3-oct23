@@ -8,7 +8,7 @@ let numExtraPersonas = 0; // Resultado de diferencia entre el numIngresado y el 
 
 const rentaBaseJardin = Number(7000); // Precio base de renta jardín (contempla num minimo de personas)
 
-const rentaXpersonaExtraJardin = Number(200); //Precio correspondiente al jardín por persona adicional a las incluidas en al renta base
+const rentaXpExtraJardin = Number(200); //Precio correspondiente al jardín por persona adicional a las incluidas en al renta base
 
 let rentaExtraJardin = 0; //Resultado de multiplicar numExtraPersonas * rentaXpersonaExtraJardin
 
@@ -42,13 +42,54 @@ enviar.addEventListener("click", function () {
   }
   ingresanum.value = numIngresado;
   console.log(numIngresado, typeof numIngresado);
+  calcNumExtraPersonas(numIngresado);
 });
+
+const calcNumExtraPersonas = function (numIngresado) {
+  numExtraPersonas = numIngresado - numBasePersonas;
+  return numExtraPersonas;
+};
 
 let cotizacion = [];
 
 const paqueteContenedor = document.getElementById("paquete-contenedor");
 
-// Event delegation - delegación de eventos
-paqueteContenedor.addEventListener("click", () => {
-  console.log("click");
+// Event delegation - delegación de eventos.
+paqueteContenedor.addEventListener("click", (e) => {
+  if (e.target.classList.contains("seleccionarPaq")) {
+    const paqueteId = e.target.id;
+
+    console.log("Eligió el paquete " + paqueteId);
+    const paquete = paquetes.find((paquete) => paquete.id == paqueteId);
+
+    console.log(paquete);
+    let numPersonasExtra = calcNumExtraPersonas(numIngresado);
+    console.log(numPersonasExtra);
+    subtotalRentaJardin =
+      rentaBaseJardin + numPersonasExtra * rentaXpExtraJardin;
+    console.log(subtotalRentaJardin);
+
+    subtotalAlimentos = numIngresado * paquete.precio;
+    console.log(subtotalAlimentos);
+
+    subtotalPaq = subtotalRentaJardin + subtotalAlimentos;
+    console.log(subtotalAlimentos);
+
+    ivaPaq = iva * subtotalPaq;
+    console.log(ivaPaq);
+    totalPaq = subtotalPaq + ivaPaq;
+    console.log(totalPaq);
+  }
 });
+
+// subtotalAlimentos = numIngresado * e.target.precio;
+
+// const seleccionarPaquete = (paqueteId) => {
+//   const paquete = paquetes.find((paquete) => paquete.id == paqueteId);
+
+//   console.log(paquete);
+// };
+
+// const pintarPaqueteCotizacion = (paquete) => {
+
+// }
