@@ -81,15 +81,3 @@ paqueteContenedor.addEventListener("click", (e) => {
     console.log(totalPaq);
   }
 });
-
-// subtotalAlimentos = numIngresado * e.target.precio;
-
-// const seleccionarPaquete = (paqueteId) => {
-//   const paquete = paquetes.find((paquete) => paquete.id == paqueteId);
-
-//   console.log(paquete);
-// };
-
-// const pintarPaqueteCotizacion = (paquete) => {
-
-// }
